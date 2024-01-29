@@ -1,7 +1,7 @@
 /**
  * @author      Ozan Topcu <ozan.topcu@tuni.fi>
- * @version     2024.0126 (last modified)
- * @since       21.0 (miminimum Java version)
+ * @version     2024.0126
+ * @since       17.0
  */
 class HelloWorld {
 

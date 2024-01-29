@@ -30,3 +30,5 @@ public class Date_Personal_Info {
         System.out.println(currentDate + personalInfo);
     }
 }
+
+// End of file
