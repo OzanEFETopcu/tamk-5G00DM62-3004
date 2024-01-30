@@ -12,7 +12,7 @@ class HelloWorld {
      * @param  args  Command line arguments. Not used.
      */
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        System.out.println("*************************\n* Hello, I'm Ozan Topcu *\n*************************");
     }
 }
 
