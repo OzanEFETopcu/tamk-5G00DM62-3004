@@ -20,3 +20,5 @@ public class bmi {
         System.out.println(answer);
     }
 }
+
+// End of file
