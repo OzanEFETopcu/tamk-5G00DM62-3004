@@ -6,7 +6,7 @@
 public class Grade {
     /**
      * Exercise: 1.6
-     * Write the Cone Volume calculator program.
+     * Write the Grade calculator program.
      *
      * @param args Command line arguments. Not used.
      */
