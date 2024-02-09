@@ -4,12 +4,13 @@
  * @since 17.0
  */
 public class Gender {
+
     /**
-     * Exercise: 2.3
-     * Write the Gender program.
-     *
-     * @param args Command line arguments. Not used.
-     */
+    * Return user name line.
+    *
+    * @param void the gender and height is set in the function.
+    * @return comment on the persons height and gender.
+    */
     public static String sort() {
         final int MALE = 0;
         final int FEMALE = 1;
@@ -35,6 +36,12 @@ public class Gender {
         }
     }
 
+    /**
+    * Exercise: 2.3
+    * Write the Gender program.
+    *
+    * @param args Command line arguments. Not used.
+    */
     public static void main(String[] args) {
         String answer = sort();
         System.out.println(answer);

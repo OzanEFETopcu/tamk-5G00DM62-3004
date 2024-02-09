@@ -4,12 +4,13 @@
  * @since 17.0
  */
 public class Calendar {
+
     /**
-     * Exercise: 2.5
-     * Write the Calendar program.
-     *
-     * @param args Command line arguments. Not used.
-     */
+    * Return user name line.
+    *
+    * @param void The values are set inside the function.
+    * @return Schedule according to time.
+    */
     public static String sort() {
         enum Day {
             MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
@@ -29,6 +30,12 @@ public class Calendar {
         }
     }
 
+    /**
+    * Exercise: 2.5
+    * Write the Calendar program.
+    *
+    * @param args Command line arguments. Not used.
+    */
     public static void main(String[] args) {
         String answer = sort();
         System.out.println(answer);

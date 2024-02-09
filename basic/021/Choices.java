@@ -4,12 +4,13 @@
  * @since 17.0
  */
 public class Choices {
+
     /**
-     * Exercise: 2.1
-     * Write the Choices program.
-     *
-     * @param args Command line arguments. Not used.
-     */
+    * Return user name line.
+    *
+    * @param int 3 values to sort.
+    * @return sorter order of those 3 values in a sentence format.
+    */
     public static String sort(int a, int b, int c) {
         int highest_value = a;
         int middle_value = b;
@@ -46,6 +47,12 @@ public class Choices {
         return highest_value + " is the biggest value\n" + middle_value + " is in the middle\n" + lowest_value + " is the smallest";
     }
 
+    /**
+    * Exercise: 2.1
+    * Write the Choices program.
+    *
+    * @param args Command line arguments. Not used.
+    */
     public static void main(String[] args) {
         String answer = sort(4, 5, 3);
         System.out.println(answer);

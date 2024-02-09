@@ -5,14 +5,21 @@
  */
 class HelloWorld {
 
+
+    public static String Hello(String name, String surname){
+        String text_message = " Hello, I'm "+name+surname+" ";
+        return text_message;
+    }
+
     /**
-     * Exercise: 1.1
-     * Write the Hello World program.
-     *
-     * @param  args  Command line arguments. Not used.
-     */
+    * Exercise: 1.1
+    * Write the Hello World program.
+    *
+    * @param  args  Command line arguments. Not used.
+    */
     public static void main(String[] args) {
-        System.out.println("*************************\n* Hello, I'm Ozan Topcu *\n*************************");
+        String text_message = Hello("Ozan", "Topcu");
+        System.out.println("*************************\n*"+text_message+"*\n*************************");
     }
 }
 
