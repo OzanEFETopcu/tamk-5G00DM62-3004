@@ -5,7 +5,12 @@
  */
 class HelloWorld {
 
-
+    /**
+    * Return user name line.
+    *
+    * @param String name and surname.
+    * @return Greet the user.
+    */
     public static String Hello(String name, String surname){
         String text_message = " Hello, I'm "+name+surname+" ";
         return text_message;
