@@ -1,8 +1,8 @@
 /**
- * @author Ozan Topcu <ozan.topcu@tuni.fi>
- * @version 2024.0130
- * @since 17.0
- */
+* @author Ozan Topcu <ozan.topcu@tuni.fi>
+* @version 2024.0130
+* @since 17.0
+*/
 public class TaxCalculator {
 
 
@@ -10,9 +10,10 @@ public class TaxCalculator {
     static final double EXTRA_TAX_RATE = 21;
 
     /**
-    * Return user name line.
+    * Returns user name line.
     *
-    * @param int seperate types of earning.
+    * @param int work_earning.
+    * @param int stock_earning.
     * @return Total tax, new income values in sentence format.
     */
     public static String calculate(int work_earning, int stock_earning) {
@@ -25,7 +26,8 @@ public class TaxCalculator {
 
     /**
     * Exercise: 1.7
-    * Write the Tax calculator program.
+    *
+    * Writes the Tax calculator program.
     *
     * @param args Command line arguments. Not used.
     */

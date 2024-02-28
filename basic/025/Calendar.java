@@ -1,14 +1,13 @@
 /**
- * @author Ozan Topcu <ozan.topcu@tuni.fi>
- * @version 2024.0130
- * @since 17.0
- */
+* @author Ozan Topcu <ozan.topcu@tuni.fi>
+* @version 2024.0130
+* @since 17.0
+*/
 public class Calendar {
 
     /**
-    * Return user name line.
+    * Returns user name line.
     *
-    * @param void The values are set inside the function.
     * @return Schedule according to time.
     */
     public static String sort() {
@@ -32,7 +31,8 @@ public class Calendar {
 
     /**
     * Exercise: 2.5
-    * Write the Calendar program.
+    *
+    * Writes the Calendar program.
     *
     * @param args Command line arguments. Not used.
     */

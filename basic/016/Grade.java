@@ -1,17 +1,20 @@
 /**
- * @author Ozan Topcu <ozan.topcu@tuni.fi>
- * @version 2024.0130
- * @since 17.0
- */
+* @author Ozan Topcu <ozan.topcu@tuni.fi>
+* @version 2024.0130
+* @since 17.0
+*/
 public class Grade {
 
     static int part1_ECTS = 2;
     static int part2_ECTS = 1;
     static int part3_ECTS = 3;
+
     /**
-    * Return user name line.
+    * Returns user name line.
     *
-    * @param int grade of each part of course.
+    * @param int part1_grade.
+    * @param int part2_grade.
+    * @param int part3_grade.
     * @return The final calculated value.
     */
     public static String calculate(int part1_grade, int part2_grade, int part3_grade) {
@@ -23,7 +26,8 @@ public class Grade {
 
     /**
     * Exercise: 1.6
-    * Write the Grade calculator program.
+    *
+    * Writes the Grade calculator program.
     *
     * @param args Command line arguments. Not used.
     */

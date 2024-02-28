@@ -1,14 +1,15 @@
 /**
- * @author Ozan Topcu <ozan.topcu@tuni.fi>
- * @version 2024.0130
- * @since 17.0
- */
+* @author Ozan Topcu <ozan.topcu@tuni.fi>
+* @version 2024.0130
+* @since 17.0
+*/
 public class Cone {
 
     /**
-    * Return user name line.
+    * Returns user name line.
     *
-    * @param double radius and height.
+    * @param double radius.
+    * @param double height.
     * @return The volume of the cone.
     */
     public static String calculate(double radius, double height) {
@@ -18,7 +19,8 @@ public class Cone {
 
     /**
     * Exercise: 1.5
-    * Write the Cone Volume calculator program.
+    *
+    * Writes the Cone Volume calculator program.
     *
     * @param args Command line arguments. Not used.
     */

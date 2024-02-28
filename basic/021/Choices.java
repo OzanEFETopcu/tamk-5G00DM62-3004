@@ -1,14 +1,16 @@
 /**
- * @author Ozan Topcu <ozan.topcu@tuni.fi>
- * @version 2024.0130
- * @since 17.0
- */
+* @author Ozan Topcu <ozan.topcu@tuni.fi>
+* @version 2024.0130
+* @since 17.0
+*/
 public class Choices {
 
     /**
-    * Return user name line.
+    * Returnx user name line.
     *
-    * @param int 3 values to sort.
+    * @param int value a.
+    * @param int value b.
+    * @param int value c.
     * @return sorter order of those 3 values in a sentence format.
     */
     public static String sort(int a, int b, int c) {
@@ -49,7 +51,8 @@ public class Choices {
 
     /**
     * Exercise: 2.1
-    * Write the Choices program.
+    *
+    * Writes the Choices program.
     *
     * @param args Command line arguments. Not used.
     */

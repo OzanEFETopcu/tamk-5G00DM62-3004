@@ -1,14 +1,15 @@
 /**
- * @author Ozan Topcu <ozan.topcu@tuni.fi>
- * @version 2024.0130
- * @since 17.0
- */
+* @author Ozan Topcu <ozan.topcu@tuni.fi>
+* @version 2024.0130
+* @since 17.0
+*/
 public class bmi {
 
     /**
-    * Return user name line.
+    * Returns user name line.
     *
-    * @param int weight, double height.
+    * @param int weight.
+    * @param double height.
     * @return Weight, height, and BMI in a sentence format.
     */
     public static String calculate(int weight, double height) {
@@ -18,7 +19,8 @@ public class bmi {
 
     /**
     * Exercise: 1.3
-    * Write the BMI calculator program.
+    *
+    * Writes the BMI calculator program.
     *
     * @param args Command line arguments. Not used.
     */

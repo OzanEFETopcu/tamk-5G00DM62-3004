@@ -1,13 +1,15 @@
 /**
- * @author      Ozan Topcu <ozan.topcu@tuni.fi>
- * @version     2024.0126
- * @since       17.0
- */
+* @author      Ozan Topcu <ozan.topcu@tuni.fi>
+* @version     2024.0126
+* @since       17.0
+*/
 public class Pythagoras {
+
     /**
-    * Return user name line.
+    * Returns user name line.
     *
-    * @param double two sides of a triangle.
+    * @param double side a.
+    * @param double side b.
     * @return The length of the side across the 90 degree angle.
     */
     public static double calculate(double a, double b){
@@ -17,7 +19,8 @@ public class Pythagoras {
 
     /**
     * Exercise: 1.4
-    * Write the Pythagoras program.
+    *
+    * Writes the Pythagoras program.
     *
     * @param  args  Command line arguments. Not used.
     */

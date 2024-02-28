@@ -2,16 +2,15 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 /**
- * @author Ozan Topcu <ozan.topcu@tuni.fi>
- * @version 2024.0129
- * @since 17.0
- */
+* @author Ozan Topcu <ozan.topcu@tuni.fi>
+* @version 2024.0129
+* @since 17.0
+*/
 public class DatePersonalInfo {
 
     /**
-    * Return user name line.
+    * Returns user name line.
     *
-    * @param void no params.
     * @return Formatted date in a sentence format.
     */
     public static String getDate() {
@@ -20,12 +19,12 @@ public class DatePersonalInfo {
         return "The date is " + formatter.format(date) + "\n";
     }
 
-
-
     /**
-    * Return user name line.
+    * Returns user name line.
     *
-    * @param String first and last name, height.
+    * @param String first name.
+    * @param String last name.
+    * @param String height.
     * @return Personal information in a sentence format.
     */
     public static String setPersonalInfo(String first, String last, String height) {
@@ -35,6 +34,7 @@ public class DatePersonalInfo {
 
     /**
     * Exercise: 1.2
+    *
     * Write the Date program.
     *
     * @param args Command line arguments. Not used.
