@@ -5,19 +5,20 @@
  */
 public class Day {
 
-    final static int MONDAY= 1;
-    final static int TUESDAY= 2;
-    final static int WEDNESDAY= 3;
-    final static int THURSDAY= 4;
-    final static int FRIDAY= 5;
-    final static int SATURDAY= 6;
-    final static int SUNDAY= 7;
+    final static int MONDAY = 1;
+    final static int TUESDAY = 2;
+    final static int WEDNESDAY = 3;
+    final static int THURSDAY = 4;
+    final static int FRIDAY = 5;
+    final static int SATURDAY = 6;
+    final static int SUNDAY = 7;
+
     /**
-    * Return user name line.
-    *
-    * @param int the number value of today.
-    * @return day according to today value.
-    */
+     * Returns user name line.
+     *
+     * @param int the number value of today.
+     * @return day according to today value.
+     */
     public static String printDay(int today) {
         if (today == 1) {
             return "MONDAY";
@@ -39,11 +40,12 @@ public class Day {
     }
 
     /**
-    * Exercise: 2.2
-    * Write the Day program.
-    *
-    * @param args Command line arguments. Not used.
-    */
+     * Implements Exercise: 2.2
+     *
+     * Writes the Day program.
+     *
+     * @param args Command line arguments. Not used.
+     */
     public static void main(String[] args) {
         int today = WEDNESDAY;
         String answer = printDay(today);

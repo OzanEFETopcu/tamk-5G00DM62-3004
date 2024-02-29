@@ -6,11 +6,10 @@
 public class Temperature {
 
     /**
-    * Return user name line.
-    *
-    * @param void city and temperature is set in the function.
-    * @return Weather updates.
-    */
+     * Returns user name line.
+     *
+     * @return Weather updates.
+     */
     public static String sort() {
         final int TORONTO = 0;
         final int MONTREAL = 1;
@@ -36,11 +35,12 @@ public class Temperature {
     }
 
     /**
-    * Exercise: 2.4
-    * Write the Temperature program.
-    *
-    * @param args Command line arguments. Not used.
-    */
+     * Implements Exercise: 2.4
+     *
+     * Writes the Temperature program.
+     *
+     * @param args Command line arguments. Not used.
+     */
     public static void main(String[] args) {
         String answer = sort();
         System.out.println(answer);

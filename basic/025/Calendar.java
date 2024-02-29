@@ -1,15 +1,15 @@
 /**
-* @author Ozan Topcu <ozan.topcu@tuni.fi>
-* @version 2024.0130
-* @since 17.0
-*/
+ * @author Ozan Topcu <ozan.topcu@tuni.fi>
+ * @version 2024.0130
+ * @since 17.0
+ */
 public class Calendar {
 
     /**
-    * Returns user name line.
-    *
-    * @return Schedule according to time.
-    */
+     * Returns user name line.
+     *
+     * @return Schedule according to time.
+     */
     public static String sort() {
         enum Day {
             MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
@@ -30,12 +30,12 @@ public class Calendar {
     }
 
     /**
-    * Exercise: 2.5
-    *
-    * Writes the Calendar program.
-    *
-    * @param args Command line arguments. Not used.
-    */
+     * Implements Exercise: 2.5
+     *
+     * Writes the Calendar program.
+     *
+     * @param args Command line arguments. Not used.
+     */
     public static void main(String[] args) {
         String answer = sort();
         System.out.println(answer);

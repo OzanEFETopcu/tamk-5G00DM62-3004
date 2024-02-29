@@ -1,18 +1,18 @@
 /**
-* @author Ozan Topcu <ozan.topcu@tuni.fi>
-* @version 2024.0130
-* @since 17.0
-*/
+ * @author Ozan Topcu <ozan.topcu@tuni.fi>
+ * @version 2024.0130
+ * @since 17.0
+ */
 public class Choices {
 
     /**
-    * Returnx user name line.
-    *
-    * @param int value a.
-    * @param int value b.
-    * @param int value c.
-    * @return sorter order of those 3 values in a sentence format.
-    */
+     * Returnx user name line.
+     *
+     * @param int value a.
+     * @param int value b.
+     * @param int value c.
+     * @return sorter order of those 3 values in a sentence format.
+     */
     public static String sort(int a, int b, int c) {
         int highest_value = a;
         int middle_value = b;
@@ -50,12 +50,12 @@ public class Choices {
     }
 
     /**
-    * Exercise: 2.1
-    *
-    * Writes the Choices program.
-    *
-    * @param args Command line arguments. Not used.
-    */
+     * Implements Exercise: 2.1
+     *
+     * Writes the Choices program.
+     *
+     * @param args Command line arguments. Not used.
+     */
     public static void main(String[] args) {
         String answer = sort(4, 5, 3);
         System.out.println(answer);
