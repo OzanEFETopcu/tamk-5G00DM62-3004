@@ -9,7 +9,6 @@ class MultiplicationTable {
      * Returns a multiplication table of a given size.
      *
      * @param int The size of the table.
-     * @return The multiplication table.
      */
     public static void printMultiplicationTable(int size) {
         System.out.print(" * |");
@@ -33,7 +32,6 @@ class MultiplicationTable {
      * Returns a seperator line for the table.
      *
      * @param int The size of the table.
-     * @return The seperator line.
      */
     public static void printSeparatorLine(int size) {
         System.out.print("---+");
