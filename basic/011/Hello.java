@@ -25,7 +25,7 @@ class HelloWorld {
      * @param args Command line arguments. Not used.
      */
     public static void main(String[] args) {
-        String text_message = hello("Ozan", "Topcu");
+        String text_message = hello("Ozan", " Topcu");
         System.out.println("*************************\n*" + text_message + "*\n*************************");
     }
 }
