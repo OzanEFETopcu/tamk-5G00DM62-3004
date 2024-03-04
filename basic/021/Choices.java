@@ -6,7 +6,7 @@
 public class Choices {
 
     /**
-     * Returnx user name line.
+     * Returns user name line.
      *
      * @param int value a.
      * @param int value b.

@@ -5,7 +5,6 @@
  */
 public class TaxCalculator {
 
-
     static final double NOMINAL_TAX_RATE = 27.3;
     static final double EXTRA_TAX_RATE = 21;
 
