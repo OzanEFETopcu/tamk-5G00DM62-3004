@@ -3,7 +3,7 @@
  * @version 2024.0306
  * @since 17.0
  */
-class arrayPrint {
+class ArrayPrint {
 
     /**
      * Returns string version of the array in reverse order.

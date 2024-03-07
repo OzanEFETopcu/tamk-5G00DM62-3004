@@ -3,7 +3,7 @@
  * @version 2024.0307
  * @since 17.0
  */
-class inchConversion {
+class InchConversion {
 
     /**
      * Returns a array of values in centimeters.

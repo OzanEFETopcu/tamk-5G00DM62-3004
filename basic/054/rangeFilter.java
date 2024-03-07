@@ -3,7 +3,7 @@
  * @version 2024.0307
  * @since 17.0
  */
-class rangeFilter {
+class RangeFilter {
 
     /**
      * Searches for values within the specified range in the given array.

@@ -3,7 +3,7 @@
  * @version 2024.0307
  * @since 17.0
  */
-class morseCodeConverter {
+class MorseCodeConverter {
 
     /**
      * Returns a morse code of input.
