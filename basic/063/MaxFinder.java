@@ -22,7 +22,7 @@ class MaxFinder {
     }
 
     /**
-     * Implements Exercise: 6.2
+     * Implements Exercise: 6.3
      *
      * @param args Command line arguments. Not used.
      */
