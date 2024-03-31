@@ -41,9 +41,16 @@ public class Inventory {
         return item; // Return the removed item
     }
 
-    // Method to add and select an item from the inventory (demonstrating different return type)
+    // Method to add and select an item from the inventory (demonstrating different
+    // return type)
     public Integer addAndSelectItem(int item) {
-        addItem(item); // Add the item to the inventory
-        return selectItem(inventory.length - 1); // Return the last added item
+        for (int i = 0; i < inventory.length; i++) {
+            if (inventory[i] == null) {
+                inventory[i] = item;
+                return inventory[i];
+            }
+        }
+        // If inventory is full, return null or handle the case appropriately
+        return null;
     }
 }
