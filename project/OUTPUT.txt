@@ -1,0 +1,319 @@
+%TESTC  94 v2
+%TSTTREE1,project.TestSuiteAll,true,7,false,-1,project.TestSuiteAll,,
+%TSTTREE2,project.PrintTest,true,4,false,-1,project.PrintTest,,
+%TSTTREE3,testThankYouMessage(project.PrintTest),false,1,false,-1,testThankYouMessage(project.PrintTest),,
+%TSTTREE4,testHello(project.PrintTest),false,1,false,-1,testHello(project.PrintTest),,
+%TSTTREE5,testClassChoiceMessage(project.PrintTest),false,1,false,-1,testClassChoiceMessage(project.PrintTest),,
+%TSTTREE6,testRepeatCheck(project.PrintTest),false,1,false,-1,testRepeatCheck(project.PrintTest),,
+%TSTTREE7,project.CalcTest,true,15,false,-1,project.CalcTest,,
+%TSTTREE8,testSum1(project.CalcTest),false,1,false,-1,testSum1(project.CalcTest),,
+%TSTTREE9,testSum2(project.CalcTest),false,1,false,-1,testSum2(project.CalcTest),,
+%TSTTREE10,testSum3(project.CalcTest),false,1,false,-1,testSum3(project.CalcTest),,
+%TSTTREE11,testMultiply1(project.CalcTest),false,1,false,-1,testMultiply1(project.CalcTest),,
+%TSTTREE12,testMultiply2(project.CalcTest),false,1,false,-1,testMultiply2(project.CalcTest),,
+%TSTTREE13,testMultiply3(project.CalcTest),false,1,false,-1,testMultiply3(project.CalcTest),,
+%TSTTREE14,testSubtract1(project.CalcTest),false,1,false,-1,testSubtract1(project.CalcTest),,
+%TSTTREE15,testSubtract2(project.CalcTest),false,1,false,-1,testSubtract2(project.CalcTest),,
+%TSTTREE16,testSubtract3(project.CalcTest),false,1,false,-1,testSubtract3(project.CalcTest),,
+%TSTTREE17,testDivide1(project.CalcTest),false,1,false,-1,testDivide1(project.CalcTest),,
+%TSTTREE18,testDivide2(project.CalcTest),false,1,false,-1,testDivide2(project.CalcTest),,
+%TSTTREE19,testDivide3(project.CalcTest),false,1,false,-1,testDivide3(project.CalcTest),,
+%TSTTREE20,testPower1(project.CalcTest),false,1,false,-1,testPower1(project.CalcTest),,
+%TSTTREE21,testPower2(project.CalcTest),false,1,false,-1,testPower2(project.CalcTest),,
+%TSTTREE22,testPower3(project.CalcTest),false,1,false,-1,testPower3(project.CalcTest),,
+%TSTTREE23,project.InventoryTest,true,15,false,-1,project.InventoryTest,,
+%TSTTREE24,testRemoveAndSelectItem(project.InventoryTest),false,1,false,-1,testRemoveAndSelectItem(project.InventoryTest),,
+%TSTTREE25,testAddItem(project.InventoryTest),false,1,false,-1,testAddItem(project.InventoryTest),,
+%TSTTREE26,testAddAndSelectItem(project.InventoryTest),false,1,false,-1,testAddAndSelectItem(project.InventoryTest),,
+%TSTTREE27,testSelectItemOutOfRange(project.InventoryTest),false,1,false,-1,testSelectItemOutOfRange(project.InventoryTest),,
+%TSTTREE28,testAddItemMultiple(project.InventoryTest),false,1,false,-1,testAddItemMultiple(project.InventoryTest),,
+%TSTTREE29,testRemoveItemEmptySlot(project.InventoryTest),false,1,false,-1,testRemoveItemEmptySlot(project.InventoryTest),,
+%TSTTREE30,testRemoveAndSelectItemOutOfRange(project.InventoryTest),false,1,false,-1,testRemoveAndSelectItemOutOfRange(project.InventoryTest),,
+%TSTTREE31,testAddItemFullInventory(project.InventoryTest),false,1,false,-1,testAddItemFullInventory(project.InventoryTest),,
+%TSTTREE32,testAddAndSelectItemFullInventory(project.InventoryTest),false,1,false,-1,testAddAndSelectItemFullInventory(project.InventoryTest),,
+%TSTTREE33,testSelectItemEmptySlot(project.InventoryTest),false,1,false,-1,testSelectItemEmptySlot(project.InventoryTest),,
+%TSTTREE34,testRemoveAndSelectItemEmptySlot(project.InventoryTest),false,1,false,-1,testRemoveAndSelectItemEmptySlot(project.InventoryTest),,
+%TSTTREE35,testRemoveItem(project.InventoryTest),false,1,false,-1,testRemoveItem(project.InventoryTest),,
+%TSTTREE36,testAddAndSelectItemEmptySlot(project.InventoryTest),false,1,false,-1,testAddAndSelectItemEmptySlot(project.InventoryTest),,
+%TSTTREE37,testRemoveItemOutOfRange(project.InventoryTest),false,1,false,-1,testRemoveItemOutOfRange(project.InventoryTest),,
+%TSTTREE38,testSelectItem(project.InventoryTest),false,1,false,-1,testSelectItem(project.InventoryTest),,
+%TSTTREE39,project.SimpleListManipulationTest,true,15,false,-1,project.SimpleListManipulationTest,,
+%TSTTREE40,testContainsNumber(project.SimpleListManipulationTest),false,1,false,-1,testContainsNumber(project.SimpleListManipulationTest),,
+%TSTTREE41,testSumAllNumbersNegativeValues(project.SimpleListManipulationTest),false,1,false,-1,testSumAllNumbersNegativeValues(project.SimpleListManipulationTest),,
+%TSTTREE42,testContainsNumberEmptyList(project.SimpleListManipulationTest),false,1,false,-1,testContainsNumberEmptyList(project.SimpleListManipulationTest),,
+%TSTTREE43,testRemoveNumberMultiple(project.SimpleListManipulationTest),false,1,false,-1,testRemoveNumberMultiple(project.SimpleListManipulationTest),,
+%TSTTREE44,testFindMaxNumberNegativeValues(project.SimpleListManipulationTest),false,1,false,-1,testFindMaxNumberNegativeValues(project.SimpleListManipulationTest),,
+%TSTTREE45,testSumAllNumbers(project.SimpleListManipulationTest),false,1,false,-1,testSumAllNumbers(project.SimpleListManipulationTest),,
+%TSTTREE46,testFindMaxNumberEmptyList(project.SimpleListManipulationTest),false,1,false,-1,testFindMaxNumberEmptyList(project.SimpleListManipulationTest),,
+%TSTTREE47,testRemoveNumberNotFound(project.SimpleListManipulationTest),false,1,false,-1,testRemoveNumberNotFound(project.SimpleListManipulationTest),,
+%TSTTREE48,testAddNumberMultiple(project.SimpleListManipulationTest),false,1,false,-1,testAddNumberMultiple(project.SimpleListManipulationTest),,
+%TSTTREE49,testContainsNumberNotFound(project.SimpleListManipulationTest),false,1,false,-1,testContainsNumberNotFound(project.SimpleListManipulationTest),,
+%TSTTREE50,testRemoveNumber(project.SimpleListManipulationTest),false,1,false,-1,testRemoveNumber(project.SimpleListManipulationTest),,
+%TSTTREE51,testAddNumberDuplicate(project.SimpleListManipulationTest),false,1,false,-1,testAddNumberDuplicate(project.SimpleListManipulationTest),,
+%TSTTREE52,testAddNumber(project.SimpleListManipulationTest),false,1,false,-1,testAddNumber(project.SimpleListManipulationTest),,
+%TSTTREE53,testFindMaxNumber(project.SimpleListManipulationTest),false,1,false,-1,testFindMaxNumber(project.SimpleListManipulationTest),,
+%TSTTREE54,testSumAllNumbersEmptyList(project.SimpleListManipulationTest),false,1,false,-1,testSumAllNumbersEmptyList(project.SimpleListManipulationTest),,
+%TSTTREE55,project.SimpleStringManipulationTest,true,15,false,-1,project.SimpleStringManipulationTest,,
+%TSTTREE56,testContainsSubstringEmptyString(project.SimpleStringManipulationTest),false,1,false,-1,testContainsSubstringEmptyString(project.SimpleStringManipulationTest),,
+%TSTTREE57,testCapitalizeFirstLetter(project.SimpleStringManipulationTest),false,1,false,-1,testCapitalizeFirstLetter(project.SimpleStringManipulationTest),,
+%TSTTREE58,testConcatenateString(project.SimpleStringManipulationTest),false,1,false,-1,testConcatenateString(project.SimpleStringManipulationTest),,
+%TSTTREE59,testReverseStringEmptyString(project.SimpleStringManipulationTest),false,1,false,-1,testReverseStringEmptyString(project.SimpleStringManipulationTest),,
+%TSTTREE60,testReverseString(project.SimpleStringManipulationTest),false,1,false,-1,testReverseString(project.SimpleStringManipulationTest),,
+%TSTTREE61,testConcatenateStringEmptyOtherString(project.SimpleStringManipulationTest),false,1,false,-1,testConcatenateStringEmptyOtherString(project.SimpleStringManipulationTest),,
+%TSTTREE62,testCapitalizeFirstLetterAlreadyCapitalized(project.SimpleStringManipulationTest),false,1,false,-1,testCapitalizeFirstLetterAlreadyCapitalized(project.SimpleStringManipulationTest),,
+%TSTTREE63,testConcatenateStringEmptyString(project.SimpleStringManipulationTest),false,1,false,-1,testConcatenateStringEmptyString(project.SimpleStringManipulationTest),,
+%TSTTREE64,testContainsSubstringNotFound(project.SimpleStringManipulationTest),false,1,false,-1,testContainsSubstringNotFound(project.SimpleStringManipulationTest),,
+%TSTTREE65,testContainsSubstring(project.SimpleStringManipulationTest),false,1,false,-1,testContainsSubstring(project.SimpleStringManipulationTest),,
+
+%TSTTREE66,testCountVowels(project.SimpleStringManipulationTest),false,1,false,-1,testCountVowels(project.SimpleStringManipulationTest),,
+%TSTTREE67,testCountVowelsEmptyString(project.SimpleStringManipulationTest),false,1,false,-1,testCountVowelsEmptyString(project.SimpleStringManipulationTest),,
+%TSTTREE68,testCountVowelsNoVowels(project.SimpleStringManipulationTest),false,1,false,-1,testCountVowelsNoVowels(project.SimpleStringManipulationTest),,
+%TSTTREE69,testReverseStringSingleCharacter(project.SimpleStringManipulationTest),false,1,false,-1,testReverseStringSingleCharacter(project.SimpleStringManipulationTest),,
+%TSTTREE70,testCapitalizeFirstLetterEmptyString(project.SimpleStringManipulationTest),false,1,false,-1,testCapitalizeFirstLetterEmptyString(project.SimpleStringManipulationTest),,
+%TSTTREE71,project.TaskListTest,true,15,false,-1,project.TaskListTest,,
+%TSTTREE72,testAddTask(project.TaskListTest),false,1,false,-1,testAddTask(project.TaskListTest),,
+%TSTTREE73,testIsEmptyAfterRemovingAllTasks(project.TaskListTest),false,1,false,-1,testIsEmptyAfterRemovingAllTasks(project.TaskListTest),,
+%TSTTREE74,testIsEmptyTrue(project.TaskListTest),false,1,false,-1,testIsEmptyTrue(project.TaskListTest),,
+%TSTTREE75,testGetTaskCountAfterRemoving(project.TaskListTest),false,1,false,-1,testGetTaskCountAfterRemoving(project.TaskListTest),,
+%TSTTREE76,testMarkTaskCompletedMultiple(project.TaskListTest),false,1,false,-1,testMarkTaskCompletedMultiple(project.TaskListTest),,
+%TSTTREE77,testRemoveTaskMultiple(project.TaskListTest),false,1,false,-1,testRemoveTaskMultiple(project.TaskListTest),,
+%TSTTREE78,testMarkTaskCompleted(project.TaskListTest),false,1,false,-1,testMarkTaskCompleted(project.TaskListTest),,
+%TSTTREE79,testMarkTaskCompletedNotFound(project.TaskListTest),false,1,false,-1,testMarkTaskCompletedNotFound(project.TaskListTest),,
+%TSTTREE80,testRemoveTask(project.TaskListTest),false,1,false,-1,testRemoveTask(project.TaskListTest),,
+%TSTTREE81,testGetTaskCountAfterAdding(project.TaskListTest),false,1,false,-1,testGetTaskCountAfterAdding(project.TaskListTest),,
+%TSTTREE82,testRemoveTaskNotFound(project.TaskListTest),false,1,false,-1,testRemoveTaskNotFound(project.TaskListTest),,
+%TSTTREE83,testAddTaskMultiple(project.TaskListTest),false,1,false,-1,testAddTaskMultiple(project.TaskListTest),,
+%TSTTREE84,testGetTaskCount(project.TaskListTest),false,1,false,-1,testGetTaskCount(project.TaskListTest),,
+%TSTTREE85,testAddTaskDuplicate(project.TaskListTest),false,1,false,-1,testAddTaskDuplicate(project.TaskListTest),,
+%TSTTREE86,testIsEmptyFalse(project.TaskListTest),false,1,false,-1,testIsEmptyFalse(project.TaskListTest),,
+%TSTTREE87,project.ArrayMathTest,true,15,false,-1,project.ArrayMathTest,,
+%TSTTREE88,testFindMaxNumberEmptyArray(project.ArrayMathTest),false,1,false,-1,testFindMaxNumberEmptyArray(project.ArrayMathTest),,
+%TSTTREE89,testSumAllNumbersNegativeValues(project.ArrayMathTest),false,1,false,-1,testSumAllNumbersNegativeValues(project.ArrayMathTest),,
+%TSTTREE90,testSetNumberNegativeIndex(project.ArrayMathTest),false,1,false,-1,testSetNumberNegativeIndex(project.ArrayMathTest),,
+%TSTTREE91,testSumAllNumbersEmptyArray(project.ArrayMathTest),false,1,false,-1,testSumAllNumbersEmptyArray(project.ArrayMathTest),,
+%TSTTREE92,testFindMaxNumberNegativeValues(project.ArrayMathTest),false,1,false,-1,testFindMaxNumberNegativeValues(project.ArrayMathTest),,
+%TSTTREE93,testSumAllNumbers(project.ArrayMathTest),false,1,false,-1,testSumAllNumbers(project.ArrayMathTest),,
+%TSTTREE94,testSetNumberOutOfRange(project.ArrayMathTest),false,1,false,-1,testSetNumberOutOfRange(project.ArrayMathTest),,
+%TSTTREE95,testMultiplyAllNumbers(project.ArrayMathTest),false,1,false,-1,testMultiplyAllNumbers(project.ArrayMathTest),,
+%TSTTREE96,testSetNumber(project.ArrayMathTest),false,1,false,-1,testSetNumber(project.ArrayMathTest),,
+%TSTTREE97,testGetNumberOutOfRange(project.ArrayMathTest),false,1,false,-1,testGetNumberOutOfRange(project.ArrayMathTest),,
+%TSTTREE98,testGetNumber(project.ArrayMathTest),false,1,false,-1,testGetNumber(project.ArrayMathTest),,
+%TSTTREE99,testGetNumberNegativeIndex(project.ArrayMathTest),false,1,false,-1,testGetNumberNegativeIndex(project.ArrayMathTest),,
+%TSTTREE100,testFindMaxNumber(project.ArrayMathTest),false,1,false,-1,testFindMaxNumber(project.ArrayMathTest),,
+%TSTTREE101,testMultiplyAllNumbersEmptyArray(project.ArrayMathTest),false,1,false,-1,testMultiplyAllNumbersEmptyArray(project.ArrayMathTest),,
+%TSTTREE102,testMultiplyAllNumbersWithZero(project.ArrayMathTest),false,1,false,-1,testMultiplyAllNumbersWithZero(project.ArrayMathTest),,
+%TESTS  3,testThankYouMessage(project.PrintTest)
+%TESTE  3,testThankYouMessage(project.PrintTest)
+%TESTS  4,testHello(project.PrintTest)
+%TESTE  4,testHello(project.PrintTest)
+%TESTS  5,testClassChoiceMessage(project.PrintTest)
+%TESTE  5,testClassChoiceMessage(project.PrintTest)
+%TESTS  6,testRepeatCheck(project.PrintTest)
+
+%TESTE  6,testRepeatCheck(project.PrintTest)
+
+%TESTS  8,testSum1(project.CalcTest)
+
+%TESTE  8,testSum1(project.CalcTest)
+
+%TESTS  9,testSum2(project.CalcTest)
+
+%TESTE  9,testSum2(project.CalcTest)
+%TESTS  10,testSum3(project.CalcTest)
+
+%TESTE  10,testSum3(project.CalcTest)
+%TESTS  11,testMultiply1(project.CalcTest)
+%TESTE  11,testMultiply1(project.CalcTest)
+%TESTS  12,testMultiply2(project.CalcTest)
+
+%TESTE  12,testMultiply2(project.CalcTest)
+%TESTS  13,testMultiply3(project.CalcTest)
+%TESTE  13,testMultiply3(project.CalcTest)
+%TESTS  14,testSubtract1(project.CalcTest)
+%TESTE  14,testSubtract1(project.CalcTest)
+%TESTS  15,testSubtract2(project.CalcTest)
+%TESTE  15,testSubtract2(project.CalcTest)
+%TESTS  16,testSubtract3(project.CalcTest)
+
+%TESTE  16,testSubtract3(project.CalcTest)
+%TESTS  17,testDivide1(project.CalcTest)
+%TESTE  17,testDivide1(project.CalcTest)
+%TESTS  18,testDivide2(project.CalcTest)
+%TESTE  18,testDivide2(project.CalcTest)
+%TESTS  19,testDivide3(project.CalcTest)
+%TESTE  19,testDivide3(project.CalcTest)
+%TESTS  20,testPower1(project.CalcTest)
+%TESTE  20,testPower1(project.CalcTest)
+%TESTS  21,testPower2(project.CalcTest)
+%TESTE  21,testPower2(project.CalcTest)
+%TESTS  22,testPower3(project.CalcTest)
+
+%TESTE  22,testPower3(project.CalcTest)
+%TESTS  24,testRemoveAndSelectItem(project.InventoryTest)
+
+%TESTE  24,testRemoveAndSelectItem(project.InventoryTest)
+%TESTS  25,testAddItem(project.InventoryTest)
+
+%TESTE  25,testAddItem(project.InventoryTest)
+%TESTS  26,testAddAndSelectItem(project.InventoryTest)
+
+%TESTE  26,testAddAndSelectItem(project.InventoryTest)
+%TESTS  27,testSelectItemOutOfRange(project.InventoryTest)
+%TESTE  27,testSelectItemOutOfRange(project.InventoryTest)
+%TESTS  28,testAddItemMultiple(project.InventoryTest)
+
+%TESTE  28,testAddItemMultiple(project.InventoryTest)
+%TESTS  29,testRemoveItemEmptySlot(project.InventoryTest)
+%TESTE  29,testRemoveItemEmptySlot(project.InventoryTest)
+%TESTS  30,testRemoveAndSelectItemOutOfRange(project.InventoryTest)
+%TESTE  30,testRemoveAndSelectItemOutOfRange(project.InventoryTest)
+%TESTS  31,testAddItemFullInventory(project.InventoryTest)
+%TESTE  31,testAddItemFullInventory(project.InventoryTest)
+%TESTS  32,testAddAndSelectItemFullInventory(project.InventoryTest)
+%TESTE  32,testAddAndSelectItemFullInventory(project.InventoryTest)
+%TESTS  33,testSelectItemEmptySlot(project.InventoryTest)
+%TESTE  33,testSelectItemEmptySlot(project.InventoryTest)
+%TESTS  34,testRemoveAndSelectItemEmptySlot(project.InventoryTest)
+%TESTE  34,testRemoveAndSelectItemEmptySlot(project.InventoryTest)
+%TESTS  35,testRemoveItem(project.InventoryTest)
+
+%TESTE  35,testRemoveItem(project.InventoryTest)
+%TESTS  36,testAddAndSelectItemEmptySlot(project.InventoryTest)
+%TESTE  36,testAddAndSelectItemEmptySlot(project.InventoryTest)
+%TESTS  37,testRemoveItemOutOfRange(project.InventoryTest)
+%TESTE  37,testRemoveItemOutOfRange(project.InventoryTest)
+%TESTS  38,testSelectItem(project.InventoryTest)
+%TESTE  38,testSelectItem(project.InventoryTest)
+%TESTS  40,testContainsNumber(project.SimpleListManipulationTest)
+%TESTE  40,testContainsNumber(project.SimpleListManipulationTest)
+%TESTS  41,testSumAllNumbersNegativeValues(project.SimpleListManipulationTest)
+%TESTE  41,testSumAllNumbersNegativeValues(project.SimpleListManipulationTest)
+%TESTS  42,testContainsNumberEmptyList(project.SimpleListManipulationTest)
+%TESTE  42,testContainsNumberEmptyList(project.SimpleListManipulationTest)
+%TESTS  43,testRemoveNumberMultiple(project.SimpleListManipulationTest)
+
+%TESTE  43,testRemoveNumberMultiple(project.SimpleListManipulationTest)
+%TESTS  44,testFindMaxNumberNegativeValues(project.SimpleListManipulationTest)
+%TESTE  44,testFindMaxNumberNegativeValues(project.SimpleListManipulationTest)
+%TESTS  45,testSumAllNumbers(project.SimpleListManipulationTest)
+%TESTE  45,testSumAllNumbers(project.SimpleListManipulationTest)
+%TESTS  46,testFindMaxNumberEmptyList(project.SimpleListManipulationTest)
+%TESTE  46,testFindMaxNumberEmptyList(project.SimpleListManipulationTest)
+%TESTS  47,testRemoveNumberNotFound(project.SimpleListManipulationTest)
+%TESTE  47,testRemoveNumberNotFound(project.SimpleListManipulationTest)
+%TESTS  48,testAddNumberMultiple(project.SimpleListManipulationTest)
+%TESTE  48,testAddNumberMultiple(project.SimpleListManipulationTest)
+%TESTS  49,testContainsNumberNotFound(project.SimpleListManipulationTest)
+%TESTE  49,testContainsNumberNotFound(project.SimpleListManipulationTest)
+%TESTS  50,testRemoveNumber(project.SimpleListManipulationTest)
+%TESTE  50,testRemoveNumber(project.SimpleListManipulationTest)
+%TESTS  51,testAddNumberDuplicate(project.SimpleListManipulationTest)
+%TESTE  51,testAddNumberDuplicate(project.SimpleListManipulationTest)
+%TESTS  52,testAddNumber(project.SimpleListManipulationTest)
+%TESTE  52,testAddNumber(project.SimpleListManipulationTest)
+%TESTS  53,testFindMaxNumber(project.SimpleListManipulationTest)
+%TESTE  53,testFindMaxNumber(project.SimpleListManipulationTest)
+
+%TESTS  54,testSumAllNumbersEmptyList(project.SimpleListManipulationTest)
+%TESTE  54,testSumAllNumbersEmptyList(project.SimpleListManipulationTest)
+%TESTS  56,testContainsSubstringEmptyString(project.SimpleStringManipulationTest)
+%TESTE  56,testContainsSubstringEmptyString(project.SimpleStringManipulationTest)
+%TESTS  57,testCapitalizeFirstLetter(project.SimpleStringManipulationTest)
+%TESTE  57,testCapitalizeFirstLetter(project.SimpleStringManipulationTest)
+%TESTS  58,testConcatenateString(project.SimpleStringManipulationTest)
+%TESTE  58,testConcatenateString(project.SimpleStringManipulationTest)
+%TESTS  59,testReverseStringEmptyString(project.SimpleStringManipulationTest)
+%TESTE  59,testReverseStringEmptyString(project.SimpleStringManipulationTest)
+%TESTS  60,testReverseString(project.SimpleStringManipulationTest)
+%TESTE  60,testReverseString(project.SimpleStringManipulationTest)
+%TESTS  61,testConcatenateStringEmptyOtherString(project.SimpleStringManipulationTest)
+%TESTE  61,testConcatenateStringEmptyOtherString(project.SimpleStringManipulationTest)
+%TESTS  62,testCapitalizeFirstLetterAlreadyCapitalized(project.SimpleStringManipulationTest)
+%TESTE  62,testCapitalizeFirstLetterAlreadyCapitalized(project.SimpleStringManipulationTest)
+%TESTS  63,testConcatenateStringEmptyString(project.SimpleStringManipulationTest)
+%TESTE  63,testConcatenateStringEmptyString(project.SimpleStringManipulationTest)
+%TESTS  64,testContainsSubstringNotFound(project.SimpleStringManipulationTest)
+
+%TESTE  64,testContainsSubstringNotFound(project.SimpleStringManipulationTest)
+%TESTS  65,testContainsSubstring(project.SimpleStringManipulationTest)
+%TESTE  65,testContainsSubstring(project.SimpleStringManipulationTest)
+%TESTS  66,testCountVowels(project.SimpleStringManipulationTest)
+%TESTE  66,testCountVowels(project.SimpleStringManipulationTest)
+%TESTS  67,testCountVowelsEmptyString(project.SimpleStringManipulationTest)
+%TESTE  67,testCountVowelsEmptyString(project.SimpleStringManipulationTest)
+%TESTS  68,testCountVowelsNoVowels(project.SimpleStringManipulationTest)
+%TESTE  68,testCountVowelsNoVowels(project.SimpleStringManipulationTest)
+%TESTS  69,testReverseStringSingleCharacter(project.SimpleStringManipulationTest)
+%TESTE  69,testReverseStringSingleCharacter(project.SimpleStringManipulationTest)
+%TESTS  70,testCapitalizeFirstLetterEmptyString(project.SimpleStringManipulationTest)
+%TESTE  70,testCapitalizeFirstLetterEmptyString(project.SimpleStringManipulationTest)
+%TESTS  72,testAddTask(project.TaskListTest)
+%TESTE  72,testAddTask(project.TaskListTest)
+%TESTS  73,testIsEmptyAfterRemovingAllTasks(project.TaskListTest)
+%TESTE  73,testIsEmptyAfterRemovingAllTasks(project.TaskListTest)
+%TESTS  74,testIsEmptyTrue(project.TaskListTest)
+%TESTE  74,testIsEmptyTrue(project.TaskListTest)
+%TESTS  75,testGetTaskCountAfterRemoving(project.TaskListTest)
+%TESTE  75,testGetTaskCountAfterRemoving(project.TaskListTest)
+%TESTS  76,testMarkTaskCompletedMultiple(project.TaskListTest)
+
+%TESTE  76,testMarkTaskCompletedMultiple(project.TaskListTest)
+
+%TESTS  77,testRemoveTaskMultiple(project.TaskListTest)
+
+%TESTE  77,testRemoveTaskMultiple(project.TaskListTest)
+%TESTS  78,testMarkTaskCompleted(project.TaskListTest)
+
+%TESTE  78,testMarkTaskCompleted(project.TaskListTest)
+%TESTS  79,testMarkTaskCompletedNotFound(project.TaskListTest)
+
+%TESTE  79,testMarkTaskCompletedNotFound(project.TaskListTest)
+%TESTS  80,testRemoveTask(project.TaskListTest)
+%TESTE  80,testRemoveTask(project.TaskListTest)
+%TESTS  81,testGetTaskCountAfterAdding(project.TaskListTest)
+%TESTE  81,testGetTaskCountAfterAdding(project.TaskListTest)
+
+%TESTS  82,testRemoveTaskNotFound(project.TaskListTest)
+%TESTE  82,testRemoveTaskNotFound(project.TaskListTest)
+%TESTS  83,testAddTaskMultiple(project.TaskListTest)
+%TESTE  83,testAddTaskMultiple(project.TaskListTest)
+%TESTS  84,testGetTaskCount(project.TaskListTest)
+%TESTE  84,testGetTaskCount(project.TaskListTest)
+%TESTS  85,testAddTaskDuplicate(project.TaskListTest)
+%TESTE  85,testAddTaskDuplicate(project.TaskListTest)
+%TESTS  86,testIsEmptyFalse(project.TaskListTest)
+%TESTE  86,testIsEmptyFalse(project.TaskListTest)
+%TESTS  88,testFindMaxNumberEmptyArray(project.ArrayMathTest)
+%TESTE  88,testFindMaxNumberEmptyArray(project.ArrayMathTest)
+
+%TESTS  89,testSumAllNumbersNegativeValues(project.ArrayMathTest)
+%TESTE  89,testSumAllNumbersNegativeValues(project.ArrayMathTest)
+%TESTS  90,testSetNumberNegativeIndex(project.ArrayMathTest)
+%TESTE  90,testSetNumberNegativeIndex(project.ArrayMathTest)
+%TESTS  91,testSumAllNumbersEmptyArray(project.ArrayMathTest)
+%TESTE  91,testSumAllNumbersEmptyArray(project.ArrayMathTest)
+%TESTS  92,testFindMaxNumberNegativeValues(project.ArrayMathTest)
+%TESTE  92,testFindMaxNumberNegativeValues(project.ArrayMathTest)
+%TESTS  93,testSumAllNumbers(project.ArrayMathTest)
+%TESTE  93,testSumAllNumbers(project.ArrayMathTest)
+%TESTS  94,testSetNumberOutOfRange(project.ArrayMathTest)
+%TESTE  94,testSetNumberOutOfRange(project.ArrayMathTest)
+%TESTS  95,testMultiplyAllNumbers(project.ArrayMathTest)
+%TESTE  95,testMultiplyAllNumbers(project.ArrayMathTest)
+%TESTS  96,testSetNumber(project.ArrayMathTest)
+%TESTE  96,testSetNumber(project.ArrayMathTest)
+%TESTS  97,testGetNumberOutOfRange(project.ArrayMathTest)
+%TESTE  97,testGetNumberOutOfRange(project.ArrayMathTest)
+%TESTS  98,testGetNumber(project.ArrayMathTest)
+
+%TESTE  98,testGetNumber(project.ArrayMathTest)
+%TESTS  99,testGetNumberNegativeIndex(project.ArrayMathTest)
+%TESTE  99,testGetNumberNegativeIndex(project.ArrayMathTest)
+%TESTS  100,testFindMaxNumber(project.ArrayMathTest)
+%TESTE  100,testFindMaxNumber(project.ArrayMathTest)
+%TESTS  101,testMultiplyAllNumbersEmptyArray(project.ArrayMathTest)
+%TESTE  101,testMultiplyAllNumbersEmptyArray(project.ArrayMathTest)
+%TESTS  102,testMultiplyAllNumbersWithZero(project.ArrayMathTest)
+%TESTE  102,testMultiplyAllNumbersWithZero(project.ArrayMathTest)
+%RUNTIME79
+
