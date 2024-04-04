@@ -1,5 +1,3 @@
-package project;
-
 /**
  * A class representing an inventory system.
  */

@@ -1,5 +1,3 @@
-package project;
-
 /**
  * A simple calculator class that performs basic arithmetic operations.
  */

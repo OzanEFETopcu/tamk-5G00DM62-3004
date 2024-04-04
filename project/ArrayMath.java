@@ -1,5 +1,3 @@
-package project;
-
 /**
  * A class for performing basic mathematical operations on an array of integers.
  */

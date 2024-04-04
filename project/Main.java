@@ -1,5 +1,3 @@
-package project;
-
 /**
  * The main class to run the project.
  */

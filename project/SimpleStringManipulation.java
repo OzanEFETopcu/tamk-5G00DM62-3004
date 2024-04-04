@@ -1,5 +1,3 @@
-package project;
-
 /**
  * A class for performing simple string manipulation operations.
  */
