@@ -116,4 +116,6 @@ public class ArrayMathTest {
         math.setNumber(1, -5);
         assertEquals(0, math.findMaxNumber()); // Max number of array with negative values
     }
+
+
 }

@@ -11,6 +11,9 @@ import org.junit.runners.Suite.SuiteClasses;
     SimpleListManipulationTest.class,
     SimpleStringManipulationTest.class,
     TaskListTest.class,
+    StudentRecordTest.class,
+    ShapeCalculatorTest.class,
+    BookTest.class,
     ArrayMathTest.class
 })
 
