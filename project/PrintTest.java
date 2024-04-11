@@ -91,7 +91,7 @@ public class PrintTest {
     }
 
     // Test case for repeatCheck() method when user input is not "1"
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void testRepeatCheckInvalidInput() {
         Print print = new Print();
         ByteArrayInputStream in = new ByteArrayInputStream("2".getBytes());
@@ -130,12 +130,32 @@ public class PrintTest {
         assertEquals("1", print.repeatCheck());
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void testRepeatCheckNonNumericInput() {
         Print print = new Print();
         ByteArrayInputStream in = new ByteArrayInputStream("abc".getBytes());
         System.setIn(in);
         assertEquals("abc", print.repeatCheck());
+    }
+
+    @Test(expected = NumberFormatException.class)
+    public void testDirectUserToClassWithNonNumericInput() {
+        Print print = new Print();
+        System.setIn(new java.io.ByteArrayInputStream("abc\n".getBytes()));
+        print.directUserToClass();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testRepeatCheckWithInvalidInput() {
+        Print print = new Print();
+        System.setIn(new java.io.ByteArrayInputStream("abc\n".getBytes()));
+        print.repeatCheck();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testSimulateNetworkConnectionWithInvalidDuration() throws InterruptedException {
+        Print print = new Print();
+        print.simulateNetworkConnection(-1); // Passing negative duration
     }
 }
 

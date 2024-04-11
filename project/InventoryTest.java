@@ -24,15 +24,6 @@ public class InventoryTest {
         assertEquals(Integer.valueOf(20), inventory.selectItem(1));
     }
 
-    @Test
-    public void testAddItemFullInventory() {
-        Inventory inventory = new Inventory(2);
-        inventory.addItem(10);
-        inventory.addItem(20);
-        inventory.addItem(30); // Attempting to add to a full inventory
-        assertNull(inventory.selectItem(2));
-    }
-
     // Test cases for removeItem() method
     @Test
     public void testRemoveItem() {
@@ -118,5 +109,35 @@ public class InventoryTest {
     public void testAddAndSelectItemEmptySlot() {
         Inventory inventory = new Inventory(5);
         assertEquals(Integer.valueOf(10), inventory.addAndSelectItem(10)); // Adding and selecting from an empty slot
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testConstructorWithNegativeSize() {
+        new Inventory(-1);
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testAddItemToFullInventory() {
+        Inventory inventory = new Inventory(1);
+        inventory.addItem(1);
+        inventory.addItem(2);
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testRemoveItemAtNegativeIndex() {
+        Inventory inventory = new Inventory(1);
+        inventory.removeItem(-1);
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testSelectItemAtOutOfBoundsIndex() {
+        Inventory inventory = new Inventory(1);
+        inventory.selectItem(1);
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testRemoveAndSelectItemAtOutOfBoundsIndex() {
+        Inventory inventory = new Inventory(1);
+        inventory.removeAndSelectItem(1);
     }
 }

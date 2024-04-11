@@ -122,4 +122,35 @@ public class SimpleListManipulationTest {
         SimpleListManipulation slm = new SimpleListManipulation();
         assertFalse(slm.containsNumber(5));
     }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testGetNumberNegativeIndex() {
+        SimpleListManipulation list = new SimpleListManipulation();
+        list.addNumber(5);
+        list.getNumber(-1);
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testRemoveNumberByIndexOutOfBounds() {
+        SimpleListManipulation list = new SimpleListManipulation();
+        list.removeNumberByIndex(0);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testGetAverageWithEmptyList() {
+        SimpleListManipulation list = new SimpleListManipulation();
+        list.getAverage();
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivideAllNumbersWithEmptyList() {
+        SimpleListManipulation list = new SimpleListManipulation();
+        list.divideAllNumbers();
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testGetNumberWithNegativeIndex() {
+        SimpleListManipulation list = new SimpleListManipulation();
+        list.getNumber(-1);
+    }
 }

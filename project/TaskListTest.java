@@ -129,4 +129,37 @@ public class TaskListTest {
         taskList.removeTask("Task 1");
         assertTrue(taskList.isEmpty());
     }
+
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testAddTaskWithNullTask() {
+        TaskList taskList = new TaskList();
+        taskList.addTask(null);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testRemoveTaskWithNullTask() {
+        TaskList taskList = new TaskList();
+        taskList.removeTask(null);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testMarkTaskCompletedWithNullTask() {
+        TaskList taskList = new TaskList();
+        taskList.markTaskCompleted(null);
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testGetTaskWithInvalidIndex() {
+        TaskList taskList = new TaskList();
+        taskList.getTask(-1); // Passing negative index
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testClearTasks() {
+        TaskList taskList = new TaskList();
+        taskList.addTask("Task 1");
+        taskList.clearTasks();
+        taskList.getTask(0); // Attempting to access task after clearing the list
+    }
 }

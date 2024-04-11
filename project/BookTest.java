@@ -156,6 +156,37 @@ public class BookTest {
         book.setAvailable(false);
         assertFalse(book.isAvailable());
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testIsTitleQuestionException() {
+        Book book = new Book("?", "Unknown Author", 1900, "Mystery", true);
+        book.isTitleQuestion();
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testBorrowUnavailableBook() {
+        Book book = new Book("Pride and Prejudice", "Jane Austen", 1813, "Romance", false);
+        book.borrowBook();
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void testGetChapterThrowsException() {
+        Book book = new Book("Pride and Prejudice", "Jane Austen", 1813, "Romance", true);
+        book.getChapter(1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testRateBookInvalidRatingLow() {
+        Book book = new Book("Pride and Prejudice", "Jane Austen", 1813, "Romance", true);
+        book.rateBook(0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testRateBookInvalidRatingHigh() {
+        Book book = new Book("Pride and Prejudice", "Jane Austen", 1813, "Romance", true);
+        book.rateBook(6);
+    }
+
 }
 
 // End of file

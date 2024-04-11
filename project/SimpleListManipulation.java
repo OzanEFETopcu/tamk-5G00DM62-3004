@@ -70,6 +70,63 @@ public class SimpleListManipulation {
     public boolean containsNumber(int number) {
         return numbers.contains(number);
     }
+
+    /**
+     * Gets the number at a specific index in the list.
+     *
+     * @param index the index of the number to retrieve (0-based)
+     * @throws IndexOutOfBoundsException if the index is outside the list bounds
+     * @return the number at the specified index
+     */
+    public int getNumber(int index) throws IndexOutOfBoundsException {
+        if (index < 0 || index >= numbers.size()) {
+            throw new IndexOutOfBoundsException("Index is out of list bounds");
+        }
+        return numbers.get(index);
+    }
+
+    /**
+     * Removes the number at a specific index from the list.
+     *
+     * @param index the index of the number to remove (0-based)
+     * @throws IndexOutOfBoundsException if the index is outside the list bounds
+     * @return the number that was removed, or -1 if the index was invalid
+     */
+    public int removeNumberByIndex(int index) throws IndexOutOfBoundsException {
+        if (index < 0 || index >= numbers.size()) {
+            throw new IndexOutOfBoundsException("Index is out of list bounds");
+        }
+        return numbers.remove(index);
+    }
+
+    /**
+     * Calculates the average of all numbers in the list.
+     *
+     * @throws ArithmeticException if the list is empty
+     * @return the average of all numbers in the list
+     */
+    public double getAverage() throws ArithmeticException {
+        if (numbers.isEmpty()) {
+            throw new ArithmeticException("Cannot calculate average of an empty list");
+        }
+        int sum = sumAllNumbers();
+        return (double) sum / numbers.size();
+    }
+
+    /**
+     * Divides the sum of all numbers in the list by the count of numbers.
+     *
+     * @throws ArithmeticException if the list is empty
+     * @return the result of dividing the sum by the count of numbers
+     */
+    public double divideAllNumbers() throws ArithmeticException {
+        int sum = sumAllNumbers();
+        if (numbers.isEmpty()) {
+            throw new ArithmeticException("Cannot divide by zero (empty list)");
+        }
+        return (double) sum / numbers.size();
+    }
+
 }
 
 // End of file

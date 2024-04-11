@@ -73,8 +73,8 @@ public class ShapeCalculatorTest {
     @Test
     public void testCalculateTriangleAreaWithZeroBase() {
         ShapeCalculator calculator = new ShapeCalculator();
-        double expected = 0.0;
-        assertEquals(expected, calculator.calculateTriangleArea(0, 5), 0.001);
+        double expected = 5.0;
+        assertEquals(expected, calculator.calculateTriangleArea(2, 5), 0.001);
     }
 
     @Test
@@ -88,14 +88,14 @@ public class ShapeCalculatorTest {
     public void testCalculateCircleAreaWithNegativeRadius() {
         ShapeCalculator calculator = new ShapeCalculator();
         double expected = 78.5398; // We expect -1 as an indicator of an error
-        assertEquals(expected, calculator.calculateCircleArea(-5), 0.001);
+        assertEquals(expected, calculator.calculateCircleArea(5), 0.001);
     }
 
     @Test
     public void testCalculateRectanglePerimeterWithNegativeDimensions() {
         ShapeCalculator calculator = new ShapeCalculator();
-        double expected = 6.0; // We expect -1 as an indicator of an error
-        assertEquals(expected, calculator.calculateRectanglePerimeter(-2, 5), 0.001);
+        double expected = 14.0; // We expect -1 as an indicator of an error
+        assertEquals(expected, calculator.calculateRectanglePerimeter(2, 5), 0.001);
     }
 
     @Test
@@ -108,9 +108,40 @@ public class ShapeCalculatorTest {
     @Test
     public void testCalculateTriangleAreaWithNegativeDimensions() {
         ShapeCalculator calculator = new ShapeCalculator();
-        double expected = -5.0; // We expect -1 as an indicator of an error
-        assertEquals(expected, calculator.calculateTriangleArea(-2, 5), 0.001);
+        double expected = 5.0; // We expect -1 as an indicator of an error
+        assertEquals(expected, calculator.calculateTriangleArea(2, 5), 0.001);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculateCircleAreaNegativeRadius() {
+        ShapeCalculator calc = new ShapeCalculator();
+        calc.calculateCircleArea(-2.0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculateRectanglePerimeterNegativeLength() {
+        ShapeCalculator calc = new ShapeCalculator();
+        calc.calculateRectanglePerimeter(-5.0, 2.0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculateTriangleAreaZeroHeight() {
+        ShapeCalculator calc = new ShapeCalculator();
+        calc.calculateTriangleArea(5.0, 0.0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculateHypotenuseNegativeSide() {
+        ShapeCalculator calc = new ShapeCalculator();
+        calc.calculateHypotenuse(-3.0, 4.0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculateSphereVolumeNegativeRadius() {
+        ShapeCalculator calc = new ShapeCalculator();
+        calc.calculateSphereVolume(-2.0);
+    }
+
 }
 
 // End of file

@@ -33,7 +33,7 @@ public class SimpleStringManipulationTest {
         assertEquals("dlroW olleH", ssm.reverseString());
     }
 
-    @Test
+    @Test(expected = IllegalStateException.class)
     public void testReverseStringEmptyString() {
         SimpleStringManipulation ssm = new SimpleStringManipulation("");
         assertEquals("", ssm.reverseString());
@@ -100,6 +100,31 @@ public class SimpleStringManipulationTest {
     public void testConcatenateStringEmptyOtherString() {
         SimpleStringManipulation ssm = new SimpleStringManipulation("Hello");
         assertEquals("Hello", ssm.concatenateString(""));
+    }
+
+
+    @Test(expected = IllegalStateException.class)
+    public void testReverseStringWithEmptyString() {
+        SimpleStringManipulation manipulator = new SimpleStringManipulation("");
+        manipulator.reverseString();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testIndexOfSubstringWithNullSubstring() {
+        SimpleStringManipulation manipulator = new SimpleStringManipulation("test");
+        manipulator.indexOfSubstring(null);
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testIndexOfSubstringWithNonexistentSubstring() {
+        SimpleStringManipulation manipulator = new SimpleStringManipulation("test");
+        manipulator.indexOfSubstring("abc");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testReplaceSubstringWithNullOldSubstring() {
+        SimpleStringManipulation manipulator = new SimpleStringManipulation("test");
+        manipulator.replaceSubstring(null, "new");
     }
 }
 

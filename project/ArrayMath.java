@@ -29,7 +29,8 @@ public class ArrayMath {
      * Gets the value of the number at the specified index in the array.
      *
      * @param index the index of the number to be retrieved
-     * @return the value of the number at the specified index, or -1 if the index is invalid
+     * @return the value of the number at the specified index, or -1 if the index is
+     *         invalid
      */
     public int getNumber(int index) {
         if (index >= 0 && index < numbers.length) {
@@ -78,6 +79,20 @@ public class ArrayMath {
             }
         }
         return max;
+    }
+
+    /**
+     * Divides all numbers in the array.
+     *
+     * @return the result of dividing all numbers in the array
+     */
+    public int divideAllNumbers() {
+
+        int result = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            result /= numbers[i];
+        }
+        return result;
     }
 }
 

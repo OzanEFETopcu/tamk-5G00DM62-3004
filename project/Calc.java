@@ -10,7 +10,10 @@ public class Calc {
      * @param b the second integer
      * @return the sum of the two integers
      */
-    public int sum(int a, int b) {
+    public int sum(Integer a, Integer b) {
+        if (a == null || b == null) {
+            throw new NullPointerException("Arguments cannot be null");
+        }
         return a + b;
     }
 
@@ -33,7 +36,11 @@ public class Calc {
      * @return the product of the two integers
      */
     public int multiply(int a, int b) {
-        return a * b;
+        long result = (long) a * b; // Perform multiplication using long to check for overflow
+        if (result > Integer.MAX_VALUE || result < Integer.MIN_VALUE) {
+            throw new ArithmeticException("Integer overflow occurred");
+        }
+        return (int) result;
     }
 
     /**
@@ -55,6 +62,9 @@ public class Calc {
      * @return the result of raising the base to the exponent
      */
     public double power(int a, int b) {
+        if (b < 0) {
+            throw new IllegalArgumentException("Exponent must be non-negative");
+        }
         return Math.pow(a, b);
     }
 }

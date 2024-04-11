@@ -122,13 +122,37 @@ public class StudentRecordTest {
         assertEquals(expected, record.calculateGPA(grades, scale), 0.001);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void testCalculateGPADifferentLengths() {
         StudentRecord record = new StudentRecord();
         double[] grades = { 80, 90, 85 };
         double[] scale = { 4, 4, 3, 3 }; // Different lengths
         double expected = -1; // We expect -1 as an indicator of an error
         assertEquals(expected, record.calculateGPA(grades, scale), 0.001);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculateAverageGradeWithEmptyArray() {
+        StudentRecord record = new StudentRecord();
+        record.calculateAverageGrade(new double[]{});
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testFindHighestGradeWithEmptyArray() {
+        StudentRecord record = new StudentRecord();
+        record.findHighestGrade(new double[]{});
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testFindLowestGradeWithEmptyArray() {
+        StudentRecord record = new StudentRecord();
+        record.findLowestGrade(new double[]{});
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalculateGPAWithDifferentLengthArrays() {
+        StudentRecord record = new StudentRecord();
+        record.calculateGPA(new double[]{80, 90, 75}, new double[]{4.0, 3.0});
     }
 }
 

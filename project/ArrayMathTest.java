@@ -117,5 +117,46 @@ public class ArrayMathTest {
         assertEquals(0, math.findMaxNumber()); // Max number of array with negative values
     }
 
+    @Test(expected = NegativeArraySizeException.class)
+    public void testSetNumberInvalidIndex() {
+        ArrayMath arrayMath = new ArrayMath(Integer.MIN_VALUE);
+        arrayMath.setNumber(10, 5); // Attempt to set a number at an index out of bounds
+    }
+
+    @Test(expected = OutOfMemoryError.class)
+    public void testSetNumberInvalidIndex2() {
+        ArrayMath arrayMath = new ArrayMath(Integer.MAX_VALUE);
+        arrayMath.setNumber(10, 5); // Attempt to set a number at an index out of bounds
+    }
+
+    @Test(expected = AssertionError.class)
+    public void testDivideAllNumbersByZero1() {
+        ArrayMath arrayMath = new ArrayMath(1);
+        arrayMath.setNumber(0, 2);
+        arrayMath.setNumber(1, 4);
+        arrayMath.setNumber(2, 6);
+        arrayMath.setNumber(3, 8);
+        arrayMath.setNumber(4, 10);
+        assertEquals(0, arrayMath.divideAllNumbers()); // Attempt to divide by zero
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivideAllNumbersByZero2() {
+        ArrayMath arrayMath = new ArrayMath(100000);
+        arrayMath.setNumber(0, 2);
+        arrayMath.setNumber(1, 4);
+        arrayMath.setNumber(2, 6);
+        arrayMath.setNumber(3, 8);
+        arrayMath.setNumber(4, 10);
+        assertEquals(0, arrayMath.divideAllNumbers()); // Attempt to divide by zero
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivideAllNumbersByZero3() {
+        ArrayMath arrayMath = new ArrayMath(100000);
+        assertEquals(0, arrayMath.divideAllNumbers()); // Attempt to divide by zero
+    }
 
 }
+
+// End of file

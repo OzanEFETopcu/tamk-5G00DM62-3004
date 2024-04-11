@@ -80,7 +80,6 @@ public class Book {
         isAvailable = available;
     }
 
-
     /**
      * Sets the title of the book.
      *
@@ -99,7 +98,6 @@ public class Book {
         author = authorUpdate;
     }
 
-
     /**
      * Sets the yearPublished of the book.
      *
@@ -109,7 +107,6 @@ public class Book {
         yearPublished = yearPublishedUpdate;
     }
 
-
     /**
      * Sets the genreUpdate of the book.
      *
@@ -118,6 +115,69 @@ public class Book {
     public void setGenre(String genreUpdate) {
         genre = genreUpdate;
     }
+
+    /**
+     * Checks if the book title is a question mark.
+     *
+     * @throws IllegalArgumentException if the book title is a question mark (?)
+     */
+    public boolean isTitleQuestion() throws IllegalArgumentException {
+        if (title.equals("?")) {
+            throw new IllegalArgumentException("Book title cannot be a question mark");
+        }
+        return title.contains("?");
+    }
+
+    /**
+     * Borrows the book (sets availability to false).
+     *
+     * @throws IllegalStateException if the book is already unavailable
+     */
+    public void borrowBook() throws IllegalStateException {
+        if (!isAvailable) {
+            throw new IllegalStateException("Book is already unavailable for borrowing");
+        }
+        isAvailable = false;
+    }
+
+    /**
+     * Gets the content of a specific chapter (not implemented).
+     *
+     * @param chapterNumber the chapter number (1-based)
+     * @throws UnsupportedOperationException always throws this exception as chapter
+     *                                       access is not implemented
+     */
+    public String getChapter(int chapterNumber) throws UnsupportedOperationException {
+        throw new UnsupportedOperationException("Chapter access not implemented");
+    }
+
+    /**
+     * Sets the summary of the book (restricted length).
+     *
+     * @param summary the summary of the book
+     * @throws IllegalArgumentException if the summary is longer than 200 characters
+     */
+    public void setSummary(String summary) throws IllegalArgumentException {
+        if (summary.length() > 200) {
+            throw new IllegalArgumentException("Summary cannot be longer than 200 characters");
+        }
+        // Set the summary (implementation omitted)
+    }
+
+    /**
+     * Rates the book (valid ratings: 1-5).
+     *
+     * @param rating the rating of the book (1-5)
+     * @throws IllegalArgumentException if the rating is outside the valid range
+     *                                  (1-5)
+     */
+    public void rateBook(int rating) throws IllegalArgumentException {
+        if (rating < 1 || rating > 5) {
+            throw new IllegalArgumentException("Rating must be between 1 and 5");
+        }
+        // Record the rating (implementation omitted)
+    }
+
 }
 
 // End of file
